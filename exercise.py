@@ -185,11 +185,13 @@ def determine_season():
 
      month = input("Enter the month of the year (Jan - Dec):")
 
-     if month not in ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+     if month !=="Jan" and month !== "Feb" and month !== "Mar" and month !== "Apr" and month !== "May" and month !== "Jun" and month !== "Jul" and month !=="Aug" and month !== "Sep"  and month !=="Oct" and month !=="Nov" and month !== "Dec"
         print("Please enter a valid month.")
         return
 
-    day = int(input("Enter the day of the month:")
+    inputday = input("Enter the day of the month:")
+
+    day = int(inputday)
 
     if day < 1 or day > 31:
         print("Please enter a day between 1 and 31.")
